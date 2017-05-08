@@ -1,0 +1,23 @@
+<div class="search">
+	<h3>Country Details</h3>
+</div>
+<section class="artistinfo">
+	<a href="index.html">Back to search</a>
+	<div class="artist cf" ng-model="countries">
+		<!--Div on the left side with name and flag-->
+		<div class="detail_info">
+			<h1>{{countries[whichItem].name}}</h1>
+			<img ng-src="images/{{countries[whichItem].shortname}}_flag.png" alt="{{countries[whichItem].name}} Flag"/>
+		</div>
+		<!--Div on the right side with country stats-->
+		<div class="bio">
+			<h3>Capital: {{countries[whichItem].capital}}</h3>
+			<h3>Population: {{countries[whichItem].population}}</h3>
+			<h3>Official Language(s): {{countries[whichItem].language}}</h3>
+			<h3>Government: {{countries[whichItem].government}}</h3>
+			<h3>Currency: {{countries[whichItem].currency}}</h3>
+			<h3>Size Ranking: {{countries[whichItem].size}}</h3>
+		</div>
+	</div>
+	
+</section>
